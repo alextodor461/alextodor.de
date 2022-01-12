@@ -1,0 +1,26 @@
+
+header{
+    background-color: black;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img{
+        width: 40px;
+        margin-left: 150px;
+    }
+
+    .a-links{
+        margin-right: 150px;
+        a{
+            margin: 0px 20px;
+            text-decoration: none;
+            color: white;
+
+            &:hover{
+                color: #FA2759;
+            }
+        }
+    }
+}
