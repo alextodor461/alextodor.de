@@ -11,6 +11,8 @@ import { HomeMainComponent } from './home/home-main/home-main.component';
 import { HomeSkillsComponent } from './home/home-skills/home-skills.component';
 import { HomeProjectsComponent } from './home/home-projects/home-projects.component';
 import { HomeAboutMeComponent } from './home/home-about-me/home-about-me.component';
+import { HomeContactComponent } from './home/home-contact/home-contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { HomeAboutMeComponent } from './home/home-about-me/home-about-me.compone
     HomeMainComponent,
     HomeSkillsComponent,
     HomeProjectsComponent,
-    HomeAboutMeComponent
+    HomeAboutMeComponent,
+    HomeContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

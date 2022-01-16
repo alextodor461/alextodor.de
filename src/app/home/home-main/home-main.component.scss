@@ -23,12 +23,11 @@ main{
     
         .contact-me-div{
             margin-left: 150px;
-            
-            button{
-                border: none;
+           
+            a{
                 padding: 20px 60px;
                 color: #2DFCD8;
-                background: none;
+                text-decoration: none;
                 border: 1.5px solid #2DFCD8;
                 font-size: 20px;
                 transition: 200ms ease;
@@ -53,7 +52,4 @@ main{
             width: 60px;
         }
     }
-
-
-
 }

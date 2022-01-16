@@ -38,8 +38,22 @@ main{
 
                 &:focus {
                     background-color: #FA2759;
-                  }
+                }
+            }
+        }
+
+        .projects{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        
+            .project-div{
+                width: 25%;
+                img{
+                    width: 25%;
+                }
             }
         }
     }   
 }
+

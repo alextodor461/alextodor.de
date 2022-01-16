@@ -8,27 +8,49 @@ import { Component, OnInit } from '@angular/core';
 export class HomeProjectsComponent implements OnInit {
   
   showAllProjects(){
-    (<HTMLInputElement>document.getElementById("Projects")).innerHTML = '';
-    (<HTMLInputElement>document.getElementById("Projects")).innerHTML = 
-    `<div>
-      <img src="assets/img/me.png">
+    (<HTMLInputElement>document.getElementById("projects-main-div")).innerHTML = '';
+    (<HTMLInputElement>document.getElementById("projects-main-div")).innerHTML = 
+    `<div class="projects">
+      <div class="project-div">
+        <img src="assets/img/code.jpg">
+      </div>
+  
+      <div class="project-div">
+        <img src="assets/img/code2.jpg">
+      </div>
+
+      <div class="project-div">
+        <img src="assets/img/code3.jpg">
+      </div>
+
+      <div class="project-div">
+        <img src="assets/img/code4.jpg">
+      </div>
     </div>`;
    }  
 
    showAngularProjects(){
-    (<HTMLInputElement>document.getElementById("Projects")).innerHTML = '';
-    (<HTMLInputElement>document.getElementById("Projects")).innerHTML = 
-    `<div>
-      <img src="assets/img/api.png">
+    (<HTMLInputElement>document.getElementById("projects-main-div")).innerHTML = '';
+    (<HTMLInputElement>document.getElementById("projects-main-div")).innerHTML = 
+    `<div class="projects">
+      <div class="project-div">
+        <img src="assets/img/code4.jpg">
+      </div>
+ 
+      <div class="project-div">
+        <img src="assets/img/code4.jpg">
+      </div>
     </div>`;
    }
 
    showJavascriptProjects(){
-    (<HTMLInputElement>document.getElementById("Projects")).innerHTML = '';
-    (<HTMLInputElement>document.getElementById("Projects")).innerHTML = 
-    `<div>
-      <img src="assets/img/css.png">
-    </div>`;
+    (<HTMLInputElement>document.getElementById("projects-main-div")).innerHTML = '';
+    (<HTMLInputElement>document.getElementById("projects-main-div")).innerHTML = 
+    `<div class="projects">
+      <div class="project-div">
+        <img src="assets/img/css.png">
+      </div>
+     </div>`;
    }
 
   ngOnInit(){
