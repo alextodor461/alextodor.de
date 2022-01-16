@@ -1,7 +1,8 @@
 main{
     background-color: #1a1a1a;
     height: 100vh;
-
+    scroll-behavior: smooth;
+    
     .headline-div{
         display: flex;
         justify-content: center;

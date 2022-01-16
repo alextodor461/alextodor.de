@@ -1,0 +1,41 @@
+main{
+    background-color: black;
+
+    .main-div{
+        .headline-div{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 10vh;
+
+            h1{
+                margin: 0;
+                color: white;
+                font-size: 25px;
+            }
+        }
+        
+        .buttons-div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button{
+                border: none;
+                background: none;
+                border: 1px #FA2759 solid;
+                color: white;
+                width: 150px;
+                padding: 20px 0px;
+                margin: 20px 10px;
+                transition: 200ms ease;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: #FA2759;
+                }
+            }
+        }
+    }   
+}

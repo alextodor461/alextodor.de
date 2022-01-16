@@ -1,6 +1,8 @@
 main{
     background-color: black;
     height: 90vh;
+    scroll-behavior: smooth;
+    
     .main-div{
         display: flex;
         justify-content: space-between;
@@ -10,15 +12,12 @@ main{
         background-color: black;
   
         h1{
-            font-size: 5em;
+            font-size: 4em;
             color: white;
         }
-    
+   
         img{
-            width: 20em;
-            height: 20em;
-            border-radius: 50%;
-            object-fit: cover;
+            width: 25%;  
             margin-right: 150px;
         }
     
@@ -40,6 +39,18 @@ main{
                     color: white;
                 }
             }
+        }
+    }
+
+    .down-arrow-div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 30vh;
+        img{
+            filter: invert(100);
+            width: 60px;
         }
     }
 

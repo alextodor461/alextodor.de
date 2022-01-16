@@ -5,12 +5,13 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    scroll-behavior: smooth;
+    
     img{
-        width: 40px;
+        width: 130px;
         margin-left: 150px;
     }
-    
+   
     .a-links{
         margin-right: 150px;
         a{
