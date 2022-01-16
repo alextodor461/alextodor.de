@@ -35,6 +35,10 @@ main{
                 &:hover{
                     background-color: #FA2759;
                 }
+
+                &:focus {
+                    background-color: #FA2759;
+                  }
             }
         }
     }   

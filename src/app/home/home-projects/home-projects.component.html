@@ -1,14 +1,23 @@
 
-<main>
-    <div class="main-div">
-        <div class="headline-div">
-            <h1>My Work</h1>     
-        </div>
 
-        <div class="buttons-div">
-            <button>All</button>
-            <button>Angular</button>
-            <button>Javascript</button>
-        </div>     
-    </div>  
-</main>
+    <main id="portfolio">
+        <div class="main-div">
+            <div class="headline-div">
+                <h1>My Work</h1>     
+            </div>
+    
+            <div class="buttons-div">
+                <button (click)="showAllProjects()">All</button>
+                <button (click)="showAngularProjects()">Angular</button>
+                <button (click)="showJavascriptProjects()">JavaScript</button>
+            </div>     
+   
+            <div id="Projects">
+    
+            </div>
+        </div>  
+    </main>
+    
+
+
+
