@@ -71,13 +71,15 @@ main{
                 color: white;
             }
 
-            a{
+            button{
                 padding: 20px 80px;
                 color: #2DFCD8;
                 text-decoration: none;
                 border: 1.5px solid #2DFCD8;
                 font-size: 20px;
                 transition: 200ms ease;
+                cursor: pointer;
+                background: none;
     
                 &:hover{
                     background-color: #2DFCD8;

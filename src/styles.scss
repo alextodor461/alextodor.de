@@ -7,3 +7,68 @@ body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
+
+
+.projects{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70vw;  
+
+    .project-div{
+        width:40%;
+        height: 40vh;
+        margin: 20px;
+        position: relative;
+
+        .overlay{
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.705);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            h3{
+                color: #FA2759;
+            }
+
+            p{
+                font-size: 20px;
+            }
+
+            a{
+                background: none;
+                border: 1px #FA2759 solid;
+                color: #FA2759;
+                width: 150px;
+                padding: 20px 0px;
+                transition: 200ms ease;
+                background-color: white;
+                text-decoration: none;
+
+                &:hover{
+                    background-color: #FA2759;
+                    color: white;
+                }
+            }
+
+            
+        }
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+.d-none{
+    display: none;
+}

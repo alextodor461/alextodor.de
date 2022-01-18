@@ -7,12 +7,12 @@ main{
             justify-content: center;
             flex-direction: column;
             align-items: center;
-            height: 10vh;
+            height: 15vh;
 
-            h1{
+            h2{
                 margin: 0;
                 color: white;
-                font-size: 25px;
+                font-size: 2.5em;
             }
         }
         
@@ -41,19 +41,15 @@ main{
                 }
             }
         }
-
-        .projects{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
         
-            .project-div{
-                width: 25%;
-                img{
-                    width: 25%;
-                }
-            }
-        }
     }   
+
+    .projectMainDiv{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
 }
+
 

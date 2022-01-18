@@ -1,22 +1,22 @@
 
 <main id="contact">
     <div class="contact-div">
-        <h2>Contact Me</h2>
+        <h2>Contact Me.</h2>
         <p>Get in touch via the form below, or by emailing me <a href= "mailto:alex_todor@yahoo.com">alex_todor@yahoo.com</a></p>
     </div>
 
     <div class="form-div">
-        <form action="">
+        <form action="https://formsubmit.co/your@email.com" method="POST">
             <label for="">Name</label>
-            <input required type="text" placeholder="Enter your Name">
+            <input required type="text" name="name" placeholder="Enter your Name">
 
             <label for="">Email</label>
-            <input required type="mail" placeholder="Enter your Email address">
+            <input required type="email" name="email" placeholder="Enter your Email address">
 
             <label for="">Message</label>
-            <textarea required placeholder="Enter your Message" name="" id="" cols="30" rows="10"></textarea>    
-              
-            <a href="">Send</a>          
+            <textarea required placeholder="Enter your Message" type="text" name="message" cols="30" rows="10"></textarea>    
+
+            <button type="submit" href="">Send</button>          
         </form>
     </div>
 </main>
