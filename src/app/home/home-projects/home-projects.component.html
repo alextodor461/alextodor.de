@@ -7,13 +7,22 @@
             </div>
    
             <div class="buttons-div">
-                <button (click)="showAllProjects()">All</button>
-                <button (click)="showAngularProjects()">Angular</button>
-                <button (click)="showJavascriptProjects()">JavaScript</button>
+                <button (click)="showCategory('all')">All</button>
+                <button (click)="showCategory('angular')">Angular</button>
+                <button (click)="showCategory('javascript')">JavaScript</button>
             </div>     
-  
+
             <div class="projectMainDiv" id="projects-main-div">
-              
+                <div class="div-to-position-the-projects-mid">
+                    <div *ngFor="let project of filteredProjects" class="project-container">
+                        <img class="project-img" src="{{project.img}}" alt="">             
+                        <div class="project-overlay">
+                            <h3>{{project.name}}</h3>
+                            <p>{{project.category}} - {{project.text}}</p>
+                            <a target="_blanc" href="{{project.url}}">Try Out</a>
+                        </div>                                       
+                    </div>
+                </div> 
             </div>
         </div>  
     </main>

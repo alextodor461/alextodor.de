@@ -1,6 +1,6 @@
 main{
     background-color: black;
-
+    padding-bottom: 100px;
     .main-div{
         .headline-div{
             display: flex;
@@ -26,6 +26,7 @@ main{
                 background: none;
                 border: 1px #FA2759 solid;
                 color: white;
+                font-size: 15px;
                 width: 150px;
                 padding: 20px 0px;
                 margin: 20px 10px;
@@ -47,9 +48,99 @@ main{
     .projectMainDiv{
         display: flex;
         justify-content: center;
-        flex-direction: column;
         align-items: center;
     }
 }
 
 
+.project-container{
+    width: 40%;
+    height: 30vh;
+    position: relative;
+    margin: 20px;
+    
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.div-to-position-the-projects-mid{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.project-container:hover .project-overlay{
+    visibility: visible;
+}
+
+.project-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-overlay{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.651);
+
+    h3{
+        color: #FA2759;
+    }
+    
+    p{
+        text-align: center;
+        padding: 10px;
+    }
+
+    a{
+        text-decoration: none;
+        background-color: white;
+        color: #FA2759;
+        border: 1px solid #FA2759;
+        padding: 10px 30px;
+        font-size: 15px;
+
+        &:hover{
+            background-color: #FA2759;
+            color: white;
+        }
+    }
+}
+
+@media all and (max-width: 800px){
+    h2{
+        font-size: 2em !important;
+    }
+
+    .buttons-div{
+
+        button{
+            width: 100px !important;
+            font-size: 1em !important;
+        }
+    }
+}
+
+@media all and (max-width: 600px){
+    .div-to-position-the-projects-mid{
+        display: flex;
+        flex-direction: column-reverse;
+
+        .project-container{
+            width: 100% !important;
+        }
+    }
+}

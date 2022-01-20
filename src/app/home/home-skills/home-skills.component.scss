@@ -28,7 +28,6 @@ main{
     .skills-div{
         display: flex;
         justify-content: center;
-        width: 70vw;
         height: 70vh;
         flex-wrap: wrap;
 
@@ -76,6 +75,14 @@ main{
             }
         }
     }
+}
 
-    
+@media all and (max-width: 800px){
+    h2{
+        font-size: 2em !important;
+    }
+
+    p{
+        font-size: 1em !important;
+    }
 }
