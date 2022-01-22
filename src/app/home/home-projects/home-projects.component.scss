@@ -75,6 +75,7 @@ main{
 
 .project-container:hover .project-overlay{
     visibility: visible;
+    z-index: 1;
 }
 
 .project-img{
@@ -95,6 +96,7 @@ main{
     right: 0;
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.651);
+    z-index: -1;
 
     h3{
         color: #FA2759;
@@ -141,6 +143,17 @@ main{
 
         .project-container{
             width: 100% !important;
+            margin: 20px 0px !important;
+        }
+    }
+}
+
+@media all and (max-width: 400px){
+    .buttons-div{
+        button{
+            font-size: 0.85em !important;
+            margin: 20px 3px !important;
+            padding: 15px 0px !important;
         }
     }
 }

@@ -14,14 +14,15 @@ export class HomeProjectsComponent implements OnInit {
       name: "El Pollo Locco",
       url: "http://alex-todor.developerakademie.net/El%20Pollo%20Loco",
       text: "based jump and run game.",
-      img: "assets/img/code3.jpg",
+      img: "assets/img/el-pollo-loco.png",
       category: "javascript"
     },
 
     {
       name: "KanbanBoard",
       url: "https://mygame.com",
-      img: "assets/img/code2.jpg",
+      text: "An kanbanboard for your tasks.",
+      img: "assets/img/kanban.png",
       category: "javascript"
     },
 

@@ -1,7 +1,7 @@
 
 main{
     background-color: white;
-    height: 10vh;
+    height: 15vh;
 
     .imprint-and-socialmedia{
         display: flex;
@@ -24,3 +24,25 @@ main{
         }
     }
 }
+
+@media all and (max-width: 800px){
+    .imprint-and-socialmedia{
+        display: flex;
+        justify-content: space-evenly !important;
+        flex-direction: column-reverse;
+
+        .social-media-div{
+            margin: 0 !important;
+        }
+
+        .imprint-div{
+            margin: 0 !important;
+        }
+
+        img{
+            margin: 0px 20px !important;
+            width: 40px !important;
+        }
+    }
+}
+

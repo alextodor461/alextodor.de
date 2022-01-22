@@ -47,7 +47,7 @@ main{
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        margin-top: 150px;
+        height: 25vh;
         img{
             filter: invert(100);
             width: 60px;
@@ -56,7 +56,7 @@ main{
 }
 
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 800px){
 
     .main-div{
         display: flex;
@@ -78,13 +78,32 @@ main{
             object-fit: contain;
         }
     }
+
+    .down-arrow-div{
+        img{
+            width: 40px !important;
+        }
+    }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 600px){
     .main-div{
         h1{
             font-size: 2.5em !important;
+            margin-right: 0 !important;
         }
         
+        .contact-me-div{
+            margin: 20px !important;
+        }
     }
+}
+
+@media all and (max-width: 450px){
+    .main-div{
+        h1{
+            font-size: 2em !important;
+        }
+    }
+    
 }

@@ -89,3 +89,26 @@ main{
         }
     }
 }
+
+@media all and (max-width: 620px) {
+    h2{
+        font-size: 2em !important;
+        margin-top: 25px !important;
+    }
+
+    .contact-div{
+        width: 90% !important;
+    }
+
+    .form-div{
+        width: 90% !important;
+        
+        input{
+            padding: 10px 0px 10px 5px !important;
+        }
+
+        textarea{
+            padding: 10px 0px 10px 5px !important;
+        }
+    }
+}
