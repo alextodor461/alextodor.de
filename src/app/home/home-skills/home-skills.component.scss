@@ -101,3 +101,21 @@ main{
         }
     }
 }
+
+@media all and (max-width: 400px){
+    .icon-div{
+        width: 40px !important;
+        height: 40px !important;
+        margin-top: -20px !important;
+
+        img{
+            width: 20px !important;
+        }
+    }
+
+    .skill-name{
+        p{
+            font-size: 0.70em !important;
+        }
+    }
+}

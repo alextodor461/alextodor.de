@@ -129,3 +129,11 @@ main{
         margin-top: 50px;
     }
 }
+
+@media all and (max-width: 400px){
+    .about-me-header{
+        img{
+            width: 50% !important;
+        }
+    }
+}

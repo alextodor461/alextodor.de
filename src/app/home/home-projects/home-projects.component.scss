@@ -20,6 +20,8 @@ main{
             display: flex;
             justify-content: center;
             align-items: center;
+            width: 90%;
+            margin: auto;
 
             button{
                 border: none;
@@ -104,7 +106,7 @@ main{
     
     p{
         text-align: center;
-        padding: 10px;
+        padding: 0px 10px;
     }
 
     a{
@@ -122,6 +124,10 @@ main{
     }
 }
 
+.active-button{
+    background-color: #FA2759;
+}
+
 @media all and (max-width: 800px){
     h2{
         font-size: 2em !important;
@@ -132,6 +138,23 @@ main{
         button{
             width: 100px !important;
             font-size: 1em !important;
+        }
+    }
+}
+
+@media all and (max-height: 700px){
+    .project-overlay{
+        h3{
+            font-size: 1em !important;
+        }
+
+        p{
+            font-size: 0.85em !important;
+        }
+
+        a{
+            font-size: 0.65em !important;
+            padding: 7.5px 20px !important;
         }
     }
 }
@@ -151,9 +174,9 @@ main{
 @media all and (max-width: 400px){
     .buttons-div{
         button{
-            font-size: 0.85em !important;
-            margin: 20px 3px !important;
-            padding: 15px 0px !important;
+            font-size: 0.65em !important;
+            margin: 15px 3px !important;
+            padding: 12.5px !important;
         }
     }
 }

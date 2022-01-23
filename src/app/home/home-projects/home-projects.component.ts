@@ -22,7 +22,7 @@ export class HomeProjectsComponent implements OnInit {
       name: "KanbanBoard",
       url: "https://mygame.com",
       text: "An kanbanboard for your tasks.",
-      img: "assets/img/kanban.png",
+      img: "assets/img/kanban.jpg",
       category: "javascript"
     },
 
@@ -56,8 +56,6 @@ export class HomeProjectsComponent implements OnInit {
   }
   
   ngOnInit(){
-    /*this.showAngularProjects(); 
-    this.showJavascriptProjects();
-    this.showAllProjects();*/
+
   }
 }
