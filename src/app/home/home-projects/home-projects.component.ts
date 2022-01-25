@@ -46,6 +46,7 @@ export class HomeProjectsComponent implements OnInit {
   showCategory(category: any){
       if(category == 'all'){
         this.filteredProjects = this.allProjects;
+        (<HTMLInputElement>document.getElementById('btn1')).classList.add('active-button');
       }else{
         this.filteredProjects = this.allProjects.filter(p => p.category === category);
       }

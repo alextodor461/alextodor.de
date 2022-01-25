@@ -91,7 +91,20 @@ main{
     }
 }
 
-@media all and (max-width: 620px) {
+@media all and (max-width: 1024px){
+    .contact-div{
+        width: 80% !important;
+    }
+
+    .form-div{
+        width: 80% !important;
+        textarea{
+            height: 20vh !important;
+        }
+    }
+}
+
+@media all and (max-width: 620px){
     h2{
         font-size: 2em !important;
         margin-top: 25px !important;
@@ -114,11 +127,36 @@ main{
     }
 }
 
-@media all and (max-height: 680px){
-    
-}
 
 @media all and (max-width: 350px){
+    .contact-div{
+        h2{
+            font-size: 1.5em !important;
+        }
+
+        p{
+            font-size: 0.75em !important;
+        }
+    }
+
+    .form-div{
+        input{
+            font-size: 0.75em !important;
+        }
+
+        textarea{
+            height: 15vh !important;
+        }
+
+        button{
+            font-size: 0.85em !important;
+            padding: 15px 30px !important;
+        }
+    }
+}
+
+
+@media all and (max-height: 680px){
     .contact-div{
         h2{
             font-size: 1.5em !important;

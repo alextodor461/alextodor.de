@@ -11,6 +11,15 @@ main{
 
         .imprint-div{
             margin-left: 100px;
+
+            a{
+                text-decoration: none;
+                color: black;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
         }
 
         .social-media-div{

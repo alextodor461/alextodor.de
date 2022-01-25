@@ -13,6 +13,7 @@ import { HomeProjectsComponent } from './home/home-projects/home-projects.compon
 import { HomeAboutMeComponent } from './home/home-about-me/home-about-me.component';
 import { HomeContactComponent } from './home/home-contact/home-contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { EmailSendComponent } from './email-send/email-send.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FooterComponent } from './footer/footer.component';
     HomeProjectsComponent,
     HomeAboutMeComponent,
     HomeContactComponent,
-    FooterComponent
+    FooterComponent,
+    EmailSendComponent
   ],
   imports: [
     BrowserModule,
