@@ -6,10 +6,14 @@ header{
     justify-content: space-between;
     align-items: center;
     scroll-behavior: smooth;
-    padding: 0px 100px;
+    padding: 0px 150px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 
     .logo{
-        width: 130px;
+        width: 60px;
+        cursor: pointer;
     }
   
     .a-links{
@@ -58,12 +62,12 @@ header{
 
 .menu-div{
     display: none;
-    margin-right: 20px;
+    z-index: 100000;
 }
 
-@media all and (max-width: 800px){
+@media all and (max-width: 950px){
     header{
-        padding: 0px !important;
+        padding: 0px 20px !important;
     }
 
     img{
@@ -93,7 +97,7 @@ header{
     }
 
     .logo{
-        width: 100px !important;
+        width: 50px !important;
     }
 }
 
@@ -102,5 +106,9 @@ header{
         clip-path:circle(700px at 0% 0%);
         -webkit-clip-path:circle(600px at 100% 0%);
         width: 100%;
+    }
+
+    .logo{
+        width: 30px !important;
     }
 }

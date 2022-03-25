@@ -1,6 +1,8 @@
 main{
-    background-color: black;
+    background-color: #131313;
     padding-bottom: 100px;
+    overflow-x: hidden;
+
     .main-div{
         .headline-div{
             display: flex;
@@ -22,6 +24,7 @@ main{
             align-items: center;
             width: 90%;
             margin: auto;
+            z-index: 22222222;
 
             button{
                 border: none;
@@ -38,13 +41,8 @@ main{
                 &:hover{
                     background-color: #FA2759;
                 }
-
-                &:focus {
-                    background-color: #FA2759;
-                }
             }
-        }
-        
+        } 
     }   
 
     .projectMainDiv{
@@ -52,6 +50,10 @@ main{
         justify-content: center;
         align-items: center;
     }
+}
+
+.selected-project{
+    background-color: #FA2759;
 }
 
 
@@ -62,13 +64,14 @@ main{
     margin: 20px;
     
     img{
+        filter: brightness(90%);
         width: 100%;
         height: 100%;
     }
 }
 
 .div-to-position-the-projects-mid{
-    width: 70%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -124,7 +127,7 @@ main{
     }
 }
 
-.active-button{
+.active-btn{
     background-color: #FA2759;
 }
 

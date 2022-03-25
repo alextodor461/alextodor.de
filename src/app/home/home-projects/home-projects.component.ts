@@ -1,5 +1,5 @@
 import { HtmlAstPath } from '@angular/compiler';
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { HomeSkillsComponent } from '../home-skills/home-skills.component';
 
 @Component({ 
@@ -8,37 +8,49 @@ import { HomeSkillsComponent } from '../home-skills/home-skills.component';
   styleUrls: ['./home-projects.component.scss']
 })
 export class HomeProjectsComponent implements OnInit {
+  projects: boolean = false;
+  selectedProject: boolean = true;
 
   allProjects = [
     {
       name: "El Pollo Locco",
-      url: "http://alex-todor.developerakademie.net/El%20Pollo%20Loco",
+      url: "https://alextodor.de/El%20Pollo%20Loco",
       text: "based jump and run game.",
-      img: "assets/img/el-pollo-loco.png",
+      img: "assets/img/elpolloloco.png",
       category: "javascript"
     },
 
     {
-      name: "KanbanBoard",
-      url: "https://mygame.com",
+      name: "Join - KanbanBoard",
+      url: "http://alextodor.de/Kanbanboard",
       text: "An kanbanboard for your tasks.",
-      img: "assets/img/kanban.jpg",
+      img: "assets/img/join-img.png",
       category: "javascript"
     },
 
     {
-      name: "El Pollo Locco",
-      url: "https://mygame.com",
-      img: "assets/img/code2.jpg",
+      name: "Ring Of Fire",
+      url: "https://ring-of-fire-c8df6.web.app",
+      text: "The Ring of Fire drinking game.",
+      img: "assets/img/ringoffire.png",
       category: "angular"
     },
 
-    {
-      name: "El Pollo Locco",
+    /*{
+      name: "Slack",
       url: "https://mygame.com",
-      img: "assets/img/code2.jpg",
+      text: "Slack",
+      img: "assets/img/chat-img.jpg",
       category: "angular"
-    }
+    },*/
+
+    {
+      name: "Kochwelt",
+      url: "https://alextodor.de/Kochwelt",
+      text: "Find the perfect recipe.",
+      img: "assets/img/kochwelt-img.png",
+      category: "javascript"
+    },
   ];
 
   filteredProjects = this.allProjects;
@@ -46,7 +58,6 @@ export class HomeProjectsComponent implements OnInit {
   showCategory(category: any){
       if(category == 'all'){
         this.filteredProjects = this.allProjects;
-        (<HTMLInputElement>document.getElementById('btn1')).classList.add('active-button');
       }else{
         this.filteredProjects = this.allProjects.filter(p => p.category === category);
       }
@@ -55,8 +66,15 @@ export class HomeProjectsComponent implements OnInit {
   showOverlay(){
     (<HTMLInputElement>document.getElementById('overlay')).classList.remove('d-none'); 
   }
-  
+ 
   ngOnInit(){
 
+  }
+
+  @HostListener("document:scroll")
+  scrollFunction(){
+    if(document.documentElement.scrollTop){
+      this.projects = true;
+    }
   }
 }

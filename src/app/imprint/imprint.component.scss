@@ -7,7 +7,7 @@ main{
 
     .imprint-div{
         width: 100%;
-        padding-left: 130px;
+        padding-left: 150px;
         h1{
             margin: 0;
         }
@@ -16,4 +16,23 @@ main{
             color: white;
         }
     }   
+}
+
+@media all and (max-width: 950px){
+    .imprint-div{
+        padding: 0px 20px !important;
+    }
+}
+
+@media all and (max-height: 750px){
+    .imprint-div{
+        h1{
+            font-size: 1.5em !important;
+        }
+
+        p{
+            font-size: 0.85em !important;
+            margin: 5px 0px !important;
+        }
+    }
 }

@@ -1,7 +1,8 @@
 
 main{
-    background-color: #1A1A1A;
-    height: 100vh;
+    background-color: #131313;
+    height: 90vh;
+    overflow-x: hidden;
 
     .about-me-header{ 
         display: flex;
@@ -54,7 +55,21 @@ main{
     }
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1150px) {
+    .whole-details-div{
+
+        img{
+            width: 60px !important;
+        }
+
+        h3{
+            font-size: 1em !important;
+        }
+    }
+}
+
+
+@media all and (max-width: 950px) {
     main{
         height: auto;
 
@@ -130,7 +145,7 @@ main{
         margin-top: 50px;
 
         .detail-div{
-            width: 40% !important;
+            width: 50% !important;
         }
     }
 }
@@ -139,6 +154,68 @@ main{
     .about-me-header{
         img{
             width: 50% !important;
+        }
+    }
+}
+
+@media all and (max-height: 800px){
+    .about-me-header{
+        padding: 30px 0px !important;
+
+        .about-me-description{
+            h2{
+                font-size: 2em !important;
+            }
+
+            p{
+                font-size: 1em !important;
+            }
+        }
+    }
+    .detail-div{
+        img{
+            width: 3.5em !important;
+        }
+
+        h3{
+            font-size: 1em !important;
+        }
+
+        p{
+            font-size: 0.90em !important;
+        }
+    }
+}
+
+@media all and (max-height: 650px){
+    .whole-details-div{
+        margin-top: 25px !important;
+    }
+
+    .about-me-header{
+        padding: 30px 0px !important;
+
+        .about-me-description{
+            h2{
+                font-size: 2em !important;
+            }
+
+            p{
+                font-size: 1em !important;
+            }
+        }
+    }
+    .detail-div{
+        img{
+            width: 3.5em !important;
+        }
+
+        h3{
+            font-size: 1em !important;
+        }
+
+        p{
+            font-size: 0.90em !important;
         }
     }
 }
