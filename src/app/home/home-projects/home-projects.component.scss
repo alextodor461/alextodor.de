@@ -52,11 +52,6 @@ main{
     }
 }
 
-.selected-project{
-    background-color: #FA2759;
-}
-
-
 .project-container{
     width: 40%;
     height: 30vh;
@@ -71,7 +66,7 @@ main{
 }
 
 .div-to-position-the-projects-mid{
-    width: 90%;
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -127,8 +122,30 @@ main{
     }
 }
 
-.active-btn{
-    background-color: #FA2759;
+.button-active{
+    background-color: #FA2759 !important;
+}
+
+.button-disabled{
+    background: none !important;
+}
+
+@media all and (max-width: 1020px){
+    h2{
+        font-size: 2em !important;
+    }
+
+    .buttons-div{
+
+        button{
+            width: 100px !important;
+            font-size: 1em !important;
+        }
+    }
+
+    .div-to-position-the-projects-mid{
+        width: 90% !important;
+    }
 }
 
 @media all and (max-width: 800px){

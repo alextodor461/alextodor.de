@@ -7,9 +7,9 @@
             </div>
 
             <div class="buttons-div">
-                <button (click)="showCategory('all')">All</button>
-                <button (click)="showCategory('angular')">Angular</button>
-                <button (click)="showCategory('javascript')">JavaScript</button>
+                <button [ngClass]="btnAll ? 'button-active': 'button-disabled'" (click)="showCategory('all')" (click)="showAll()">All</button>
+                <button [ngClass]="btnAng ? 'button-active': 'button-disabled'" (click)="showCategory('angular')" (click)="showAngular()">Angular</button>
+                <button [ngClass]="btnJS ? 'button-active': 'button-disabled'" (click)="showCategory('javascript')" (click)="showJS()">JavaScript</button>
             </div>     
 
             <div class="projectMainDiv" id="projects-main-div">

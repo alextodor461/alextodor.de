@@ -46,7 +46,7 @@ main{
             }
 
             img{
-                width: 30px;
+                width: 60%;
             }
 
             .icon-main-div{
@@ -112,6 +112,12 @@ main{
     .skill-div{
         border-radius: 5px !important;
 
+        .icon-div{
+            width: 40px !important;
+            height: 40px !important;
+            margin-top: -20px !important;
+        }
+
         p{
             font-size: 0.80em !important;
         }
@@ -123,15 +129,11 @@ main{
         height: 15% !important;
 
         .icon-div{
-            width: 40px !important;
-            height: 40px !important;
+            width: 35px !important;
+            height: 35px !important;
             margin-top: -20px !important;
-    
-            img{
-                width: 20px !important;
-            }
         }
-    
+   
         .skill-name{
             p{
                 font-size: 0.70em !important;

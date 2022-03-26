@@ -3,7 +3,7 @@
 ########### CONFIG ###############
 
 $recipient = 'alex_todor@yahoo.com';
-$redirect = 'http://alextodor.de/alextodor/';
+$redirect = 'https://alextodor.de/alextodor/';
 
 ########### CONFIG END ###########
 

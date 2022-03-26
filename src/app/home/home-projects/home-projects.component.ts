@@ -10,11 +10,14 @@ import { HomeSkillsComponent } from '../home-skills/home-skills.component';
 export class HomeProjectsComponent implements OnInit {
   projects: boolean = false;
   selectedProject: boolean = true;
+  btnAll: boolean = true;
+  btnAng: boolean = false;
+  btnJS: boolean = false;
 
   allProjects = [
     {
       name: "El Pollo Locco",
-      url: "https://alextodor.de/El%20Pollo%20Loco",
+      url: "http://alextodor.de/El%20Pollo%20Loco",
       text: "based jump and run game.",
       img: "assets/img/elpolloloco.png",
       category: "javascript"
@@ -61,6 +64,24 @@ export class HomeProjectsComponent implements OnInit {
       }else{
         this.filteredProjects = this.allProjects.filter(p => p.category === category);
       }
+  }
+
+  showAll(){
+    this.btnAll = true;
+    this.btnAng = false;
+    this.btnJS = false;
+  }
+
+  showAngular(){
+    this.btnAll = false;
+    this.btnAng = true;
+    this.btnJS = false;
+  }
+
+  showJS(){
+    this.btnAll = false;
+    this.btnAng = false;
+    this.btnJS = true;
   }
 
   showOverlay(){

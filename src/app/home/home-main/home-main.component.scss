@@ -53,6 +53,16 @@ main{
     }
 }
 
+@media all and (max-width: 1300px){
+
+    .main-div{
+
+        h1{
+            font-size: 2.5em !important;
+        }
+    }
+}
+
 @media all and (max-width: 950px){
 
     .main-div{
@@ -60,8 +70,12 @@ main{
         justify-content: center !important;
         flex-direction: column-reverse;
 
+        a{
+            font-size: 1em !important;
+        }
+
         h1{
-            font-size: 3em !important;
+            font-size: 2em !important;
         }
 
         .contact-me-div{
@@ -80,22 +94,23 @@ main{
 @media all and (max-width: 600px){
     .main-div{
         h1{
-            font-size: 2.5em !important;
+            font-size: 1.5em !important;
             margin-right: 0 !important;
         }
         
         .contact-me-div{
             margin: 20px !important;
         }
+
+        a{
+            font-size: 0.9em !important;
+            padding: 15px 40px !important;
+        }
     }
 }
 
 @media all and (max-width: 450px){
-    .main-div{
-        h1{
-            font-size: 2em !important;
-        }   
-
+    .main-div{ 
         img{
             margin-top: 50px !important;
             width: 40% !important;
@@ -103,11 +118,21 @@ main{
 
         a{
             padding: 10px 30px !important;
-            font-size: 1em !important;
         }
     }
 }
 
+@media all and (max-width: 350px){
+    .main-div{ 
+        h1{
+            font-size: 1.25em !important;
+        }
+
+        a{
+            padding: 10px 30px !important;
+        }
+    }
+}
 
 
 
@@ -144,7 +169,7 @@ svg{
   #red {
     fill: none;
     opacity: 0.15;
-    stroke: #CE1B5F;
+    stroke: #FA2759;
     stroke-width: 6;
     stroke-miterlimit:10;
     animation: show 4s;
