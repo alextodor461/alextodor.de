@@ -3,7 +3,8 @@ main{
     background-color: #131313;
     height: 90vh;
     overflow-x: hidden;
-
+    font-family: 'Raleway', sans-serif;
+    
     .about-me-header{ 
         display: flex;
         justify-content: space-between;
@@ -28,6 +29,7 @@ main{
             h2{
                 color: white;
                 font-size: 2.5em;
+                font-weight: 100;
             }
 
             p{

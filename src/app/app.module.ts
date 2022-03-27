@@ -12,6 +12,9 @@ import { HomeAboutMeComponent } from './home/home-about-me/home-about-me.compone
 import { HomeContactComponent } from './home/home-contact/home-contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -30,6 +33,9 @@ import { CommonModule } from '@angular/common';
     BrowserModule,
     AppRoutingModule,
     CommonModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

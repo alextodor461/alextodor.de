@@ -13,10 +13,10 @@ export class HomeProjectsComponent implements OnInit {
   btnAll: boolean = true;
   btnAng: boolean = false;
   btnJS: boolean = false;
-
+  
   allProjects = [
     {
-      name: "El Pollo Locco",
+      name: "- EL POLLO LOCO -",
       url: "http://alextodor.de/El%20Pollo%20Loco",
       text: "based jump and run game.",
       img: "assets/img/elpolloloco.png",
@@ -24,7 +24,7 @@ export class HomeProjectsComponent implements OnInit {
     },
 
     {
-      name: "Join - KanbanBoard",
+      name: "- JOIN - KANBANBOARD -",
       url: "http://alextodor.de/Kanbanboard",
       text: "An kanbanboard for your tasks.",
       img: "assets/img/join-img.png",
@@ -32,7 +32,7 @@ export class HomeProjectsComponent implements OnInit {
     },
 
     {
-      name: "Ring Of Fire",
+      name: "- RING OF FIRE -",
       url: "https://ring-of-fire-c8df6.web.app",
       text: "The Ring of Fire drinking game.",
       img: "assets/img/ringoffire.png",
@@ -40,7 +40,7 @@ export class HomeProjectsComponent implements OnInit {
     },
 
     /*{
-      name: "Slack",
+      name: "- Slack -",
       url: "https://mygame.com",
       text: "Slack",
       img: "assets/img/chat-img.jpg",
@@ -48,7 +48,7 @@ export class HomeProjectsComponent implements OnInit {
     },*/
 
     {
-      name: "Kochwelt",
+      name: "- KOCHWELT -",
       url: "https://alextodor.de/Kochwelt",
       text: "Find the perfect recipe.",
       img: "assets/img/kochwelt-img.png",

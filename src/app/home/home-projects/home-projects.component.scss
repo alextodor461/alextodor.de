@@ -2,6 +2,7 @@ main{
     background-color: #131313;
     padding-bottom: 100px;
     overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
 
     .main-div{
         .headline-div{
@@ -15,6 +16,7 @@ main{
                 margin: 0;
                 color: white;
                 font-size: 2.5em;
+                font-weight: 100;
             }
         }
         
@@ -40,6 +42,7 @@ main{
 
                 &:hover{
                     background-color: #FA2759;
+                    color: #FA2759;
                 }
             }
         } 
@@ -124,6 +127,13 @@ main{
 
 .button-active{
     background-color: #FA2759 !important;
+    cursor: not-allowed !important;
+    padding: 17.5px 0px !important;
+    width: 135px !important;
+
+    &:hover{
+        color: white !important;
+    }
 }
 
 .button-disabled{

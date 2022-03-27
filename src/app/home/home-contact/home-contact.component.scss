@@ -2,6 +2,21 @@ main{
     background-color: black;
     height: 90vh;
     overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+    
+    .mat-form-field {
+        display: inline-block;
+        width: 90%;
+        color: black !important;
+
+        .label{
+            color: white!important;
+        }
+
+        input{
+            background-color: rgb(26, 26, 26) !important;
+        }
+    }
 
     .contact-div{
         display: flex;
@@ -14,10 +29,12 @@ main{
         h2{
             color: #2DFCD8;
             font-size: 4em;
+            font-family: 'Raleway', sans-serif;
         }
 
         p{
             color: white;
+            font-family: 'Raleway', sans-serif;
 
             a{
                 text-decoration: none;
@@ -38,6 +55,7 @@ main{
         width: 60%;
         margin: auto;
         position: relative;
+        color: white;
 
         form{
             display: flex;
@@ -61,6 +79,8 @@ main{
                 margin: 10px 0px;
                 outline: none;
                 color: white;
+                border-bottom: 1px solid #2DFCD8;
+                font-family: 'Raleway', sans-serif;
             }
 
             textarea{
@@ -72,6 +92,8 @@ main{
                 outline: none;
                 color: white;
                 resize: none;
+                border-bottom: 1px solid #2DFCD8;
+                font-family: 'Raleway', sans-serif;
             }
 
             button{
@@ -83,6 +105,7 @@ main{
                 transition: 200ms ease;
                 cursor: pointer;
                 background: none;
+                font-family: 'Raleway', sans-serif;
     
                 &:hover{
                     background-color: #2DFCD8;

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, HostListener, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +7,6 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 
 export class HeaderComponent implements OnInit {
-
   openMenu(){
     (<HTMLInputElement>document.getElementById('menuLinks')).classList.toggle('menu-links-open'); 
   }
