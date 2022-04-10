@@ -1,5 +1,5 @@
 main{
-    background-color: black;
+    background-color: #131313;
     height: 90vh;
     overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
@@ -14,7 +14,7 @@ main{
         }
 
         input{
-            background-color: rgb(26, 26, 26) !important;
+            background-color: rgb(29, 29, 29) !important;
         }
     }
 
@@ -28,7 +28,7 @@ main{
 
         h2{
             color: #2DFCD8;
-            font-size: 4em;
+            font-size: 2.5em;
             font-family: 'Raleway', sans-serif;
         }
 
@@ -101,7 +101,7 @@ main{
                 color: #2DFCD8;
                 text-decoration: none;
                 border: 1.5px solid #2DFCD8;
-                font-size: 20px;
+                font-size: 1em;
                 transition: 200ms ease;
                 cursor: pointer;
                 background: none;
@@ -147,7 +147,6 @@ main{
         }
     }
 }
-
 
 @media all and (max-width: 350px){
     .contact-div{

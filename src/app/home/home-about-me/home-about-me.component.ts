@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-about-me.component.scss']
 })
 export class HomeAboutMeComponent implements OnInit {
+  nativeElement: any;
 
   constructor() { }
 

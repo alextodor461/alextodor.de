@@ -1,5 +1,5 @@
 main{
-    background-color: #131313;
+    background-color: black;
     padding-bottom: 100px;
     overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
@@ -31,7 +31,7 @@ main{
             button{
                 border: none;
                 background: none;
-                border: 1px #FA2759 solid;
+                border: 1px #2DFCD8 solid;
                 color: white;
                 font-size: 15px;
                 width: 150px;
@@ -39,10 +39,11 @@ main{
                 margin: 20px 10px;
                 transition: 200ms ease;
                 cursor: pointer;
+                font-family: "Raleway", sans-serif;
 
                 &:hover{
                     background-color: #FA2759;
-                    color: #FA2759;
+                    color: #2DFCD8;
                 }
             }
         } 
@@ -98,35 +99,37 @@ main{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.651);
+    background-color: rgba(8, 8, 8, 0.651);
     z-index: -1;
 
     h3{
-        color: #FA2759;
+        color: #2DFCD8;
+        padding: 0px 30px;
+        text-align: center;
     }
-    
+   
     p{
         text-align: center;
         padding: 0px 10px;
+        color: white;
     }
 
     a{
         text-decoration: none;
-        background-color: white;
-        color: #FA2759;
-        border: 1px solid #FA2759;
+        color: #2DFCD8;
+        border: 1px solid #2DFCD8;
         padding: 10px 30px;
         font-size: 15px;
 
         &:hover{
-            background-color: #FA2759;
-            color: white;
+            background-color: #2DFCD8;
+            color: black;
         }
     }
 }
 
 .button-active{
-    background-color: #FA2759 !important;
+    background-color: #2DFCD8 !important;
     cursor: not-allowed !important;
     padding: 17.5px 0px !important;
     width: 135px !important;
@@ -146,11 +149,14 @@ main{
     }
 
     .buttons-div{
-
         button{
-            width: 100px !important;
-            font-size: 1em !important;
+            width: 135px !important;
+            font-size: 0.80em !important;
         }
+    }
+
+    .button-active{
+        width: 80px !important;
     }
 
     .div-to-position-the-projects-mid{
@@ -167,7 +173,7 @@ main{
 
         button{
             width: 100px !important;
-            font-size: 1em !important;
+            font-size: 0.80em !important;
         }
     }
 }
@@ -198,6 +204,10 @@ main{
             width: 100% !important;
             margin: 20px 0px !important;
         }
+    }
+
+    h2{
+        font-size: 1.5em !important;
     }
 }
 

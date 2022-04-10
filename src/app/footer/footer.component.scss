@@ -60,3 +60,24 @@ main{
     }
 }
 
+@media all and (max-width: 450px){
+    .imprint-and-socialmedia{
+        display: flex;
+        justify-content: space-evenly !important;
+        flex-direction: column-reverse;
+        font-size: 0.80em !important;
+
+        .social-media-div{
+            margin: 0 !important;
+        }
+
+        .imprint-div{
+            margin: 0 !important;
+        }
+
+        img{
+            margin: 0px 20px !important;
+            width: 35px !important;
+        }
+    }
+}
