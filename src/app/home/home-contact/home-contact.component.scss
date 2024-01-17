@@ -1,6 +1,7 @@
 main{
     background-color: #131313;
-    height: 90vh;
+    height: auto;
+    min-height: 90vh;
     overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
 
@@ -125,6 +126,7 @@ main{
 
             button{
                 padding: 20px 80px;
+                margin-bottom: 20px;
                 color: #2DFCD8;
                 text-decoration: none;
                 border: 1.5px solid #2DFCD8;
