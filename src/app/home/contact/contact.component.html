@@ -14,27 +14,14 @@
     </div>
 
     <div class="form-div">
-        <form [formGroup]="form" action="https://alextodor.de/alextodor/sendMail.php" method="POST">     
-            <input formControlName="name" required type="text" name="name" placeholder="Enter your Name">
-            <ng-container *ngIf="form.controls['name'] as NameControl">
-                <p *ngIf="NameControl.touched && NameControl.errors?.['required']">Name is required*</p>
-                <p *ngIf="NameControl.touched && NameControl.errors?.['maxlength']">There can be a maximum of five hundred letters*</p>
-            </ng-container>
-     
-            <input formControlName="email" required type="email" name="email" placeholder="Enter your Email address">
-            <ng-container *ngIf="form.controls['email'] as EmailControl">
-                <p *ngIf="EmailControl.touched && EmailControl.errors?.['required']">Email is required*</p>
-                <p *ngIf="EmailControl.touched && EmailControl.errors?.['pattern']">Please give a valid email address*</p>
-            </ng-container>
-    
-            <textarea formControlName="message" required placeholder="Enter your Message" type="text" name="message" cols="30" rows="10"></textarea>
-            <ng-container *ngIf="form.controls['message'] as MessageControl">
-                <p *ngIf="MessageControl.touched && MessageControl.errors?.['required']">Message is required*</p>
-                <p *ngIf="MessageControl.touched && MessageControl.errors?.['minlength']">Please enter at least five letters*</p>
-                <p *ngIf="MessageControl.touched && MessageControl.errors?.['maxlength']">There can be a maximum of five hundred letters*</p>
-            </ng-container>    
-                
-            <button class="button-valid">Send message</button> 
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">     
+            <input [(ngModel)]="contactData.name" type="text" name="name" placeholder="Enter your Name" required>
+            
+            <input [(ngModel)]="contactData.email" formControlName="email" type="email" name="email" placeholder="Enter your Email address" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+            
+            <textarea [(ngModel)]="contactData.message" formControlName="message" placeholder="Enter your Message" type="text" name="message" cols="30" rows="10" required=""></textarea>
+               
+            <button type="submit" class="button-valid">Send message</button> 
         </form>
     </div>
 

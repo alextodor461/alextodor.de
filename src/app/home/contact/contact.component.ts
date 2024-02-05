@@ -1,5 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -7,33 +8,45 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-  btnInvalid: boolean = true;
-  btnValid: boolean = false;
+  mailTest: boolean = true;
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
   }
 
-  form = new FormGroup({
-    name: new FormControl('', [
-      Validators.required,
-      Validators.maxLength(20)
-    ], []),
+  contactData = {
+    name: "",
+    email: "",
+    message: ""
+  }
 
-    email: new FormControl('', [
-      Validators.required,
-      Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')
-    ], []),
+  post = {
+    endPoint: 'https://alextodor.de/alextodor/sendMail.php',
+    body: (payload: any) => JSON.stringify(payload),
+    options: {
+      headers: {
+        'Content-Type': 'text/plain',
+        responseType: 'text',
+      },
+    },
+  };
 
-    message: new FormControl('', [
-      Validators.required,
-      Validators.minLength(5),
-      Validators.maxLength(500)
-    ], []),
+  onSubmit(ngForm: NgForm) {
+    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+        .subscribe({
+          next: (response) => {
+            ngForm.resetForm();
+          },
+          error: (error) => {
+            console.error(error);
+          },
+          complete: () => console.info('send post complete'),
+        });
+    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
 
-    checkbox: new FormControl('', [
-      Validators.requiredTrue
-    ], [])
-  })
+      ngForm.resetForm();
+    }
+  }
 }
