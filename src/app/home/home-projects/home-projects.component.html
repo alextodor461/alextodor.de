@@ -1,32 +1,88 @@
-
-
-    <main id="portfolio">
-        <div class="main-div">
-            <div class="headline-div">
-                <h2>- Portfolio -</h2>     
-            </div>
-
-            <div class="buttons-div">
-                <button [ngClass]="btnAll ? 'button-active': 'button-disabled'" (click)="showCategory('all')" (click)="showAll()">All</button>
-                <button [ngClass]="btnAng ? 'button-active': 'button-disabled'" (click)="showCategory('angular')" (click)="showAngular()">Angular</button>
-                <button [ngClass]="btnJS ? 'button-active': 'button-disabled'" (click)="showCategory('javascript')" (click)="showJS()">JavaScript</button>
-            </div>     
-
-            <div class="projectMainDiv" id="projects-main-div">
-                <div class="div-to-position-the-projects-mid">
-                    <div *ngFor="let project of filteredProjects" class="project-container" data-aos-offset="100" data-aos="zoom-in-right">
-                        <img *ngIf="projects"  class="project-img" src="{{project.img}}" alt="">             
-                        <div class="project-overlay">
-                            <h3>{{project.name}}</h3>
-                            <p>{{project.category}} - {{project.text}}</p>
-                            <a target="_blanc" href="{{project.url}}">Try Out</a>
-                        </div>                                       
-                    </div>
-                </div> 
-            </div>
-        </div>  
-    </main>
+<main id="portfolio">
     
+    <div class="main-div">
+        <img class="purple-shadow-img" src="assets/img/Purple shadow.png" alt="">
+        <img class="green-shadow-img" src="assets/img/Green shadow.png" alt="">
+            <!--<div class="buttons-div">
+                    <button [ngClass]="btnAll ? 'button-active': 'button-disabled'" (click)="showCategory('all')" (click)="showAll()">All</button>
+                    <button [ngClass]="btnAng ? 'button-active': 'button-disabled'" (click)="showCategory('angular')" (click)="showAngular()">Angular</button>
+                    <button [ngClass]="btnJS ? 'button-active': 'button-disabled'" (click)="showCategory('javascript')" (click)="showJS()">JavaScript</button>
+                </div> -->    
+        <div class="headline-main-div">
+            <div class="headline-div">
+                <hr class="first-hr">
+                <h1>Portfolio</h1>
+                <hr class="second-hr">
+            </div>
+            <p>This page is a sample of my work - please feel free to try them out.</p>
+        </div>
 
+        <div class="projects-main-div">
+            <div class="project-div-flex1">
+                <img src="assets/img/Pollo loco 2.png" alt="">
+                <div class="project-description">
+                    <div class="headline-div">
+                        <h3>Ring of Fire</h3>
+                        <p>Angular | Typescript | HTML | CSS | Firebase</p>
+                        <p class="description">Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.</p>
+                    </div>
 
+                    <div class="div-btn">
+                        <a class="live-test-btn" target="_blanc" href="https://ring-of-fire-c8df6.web.app">Live test</a>
+                        <a class="github-btn" target="_blanc" href="https://github.com/alextodor461/RingOfFire">Github</a>
+                    </div>
+                </div>
+            </div>
 
+            <div class="project-div-flex2">
+                <img src="assets/img/Pollo loco 2.png" alt="">
+                <div class="project-description">
+                    <div class="headline-div">
+                        <h3>Join</h3>
+                        <p>Angular | Typescript | HTML | CSS | Firebase</p>
+                        <p class="description">Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.</p>
+                    </div>
+
+                    <div class="div-btn">
+                        <button class="live-test-btn">Live test</button>
+                        <button class="github-btn">Github</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-div-flex1">
+                <img src="assets/img/Pollo loco 2.png" alt="">
+                <div class="project-description">
+                    <div class="headline-div">
+                        <h3>Join</h3>
+                        <p>Angular | Typescript | HTML | CSS | Firebase</p>
+                        <p class="description">Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.</p>
+                    </div>
+
+                    <div class="div-btn">
+                        <button class="live-test-btn">Live test</button>
+                        <button class="github-btn">Github</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-div-flex2">
+                <img src="assets/img/Pollo loco 2.png" alt="">
+                <div class="project-description">
+                    <div class="headline-div">
+                        <h3>Join</h3>
+                        <p>Angular | Typescript | HTML | CSS | Firebase</p>
+                        <p class="description">Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.</p>
+                    </div>
+
+                    <div class="div-btn">
+                        <button class="live-test-btn">Live test</button>
+                        <button class="github-btn">Github</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+</main>
+
+    

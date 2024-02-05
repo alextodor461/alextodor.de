@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,13 +9,13 @@ import { HomeMainComponent } from './home/home-main/home-main.component';
 import { HomeSkillsComponent } from './home/home-skills/home-skills.component';
 import { HomeProjectsComponent } from './home/home-projects/home-projects.component';
 import { HomeAboutMeComponent } from './home/home-about-me/home-about-me.component';
-import { HomeContactComponent } from './home/home-contact/home-contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ContactComponent } from './home/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -27,8 +27,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeSkillsComponent,
     HomeProjectsComponent,
     HomeAboutMeComponent,
-    HomeContactComponent,
     FooterComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

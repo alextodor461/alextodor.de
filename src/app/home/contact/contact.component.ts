@@ -2,11 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-home-contact',
-  templateUrl: './home-contact.component.html',
-  styleUrls: ['./home-contact.component.scss']
+  selector: 'app-contact',
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.scss']
 })
-export class HomeContactComponent implements OnInit {
+export class ContactComponent implements OnInit {
+  btnInvalid: boolean = true;
+  btnValid: boolean = false;
 
   constructor() { }
 
@@ -28,6 +30,10 @@ export class HomeContactComponent implements OnInit {
       Validators.required,
       Validators.minLength(5),
       Validators.maxLength(500)
+    ], []),
+
+    checkbox: new FormControl('', [
+      Validators.requiredTrue
     ], [])
   })
 }

@@ -1,0 +1,73 @@
+<main id="contact">
+    <img class="purple-shadow-img" src="assets/img/Purple shadow 1.png" alt="">
+    <div class="description-main-div">
+        <div class="headline-div">
+            <hr>
+            <h1>Contact</h1>
+        </div>
+        
+        <div class="description">
+            <h4>Got a problem to solve?</h4>
+            <p>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your projects with my work.</p>
+            <p>Need a Junior Full Stack developer? Contact me!</p>
+        </div>
+    </div>
+
+    <div class="form-div">
+        <form [formGroup]="form" action="https://alextodor.de/alextodor/sendMail.php" method="POST">     
+            <input formControlName="name" required type="text" name="name" placeholder="Enter your Name">
+            <ng-container *ngIf="form.controls['name'] as NameControl">
+                <p *ngIf="NameControl.touched && NameControl.errors?.['required']">Name is required*</p>
+                <p *ngIf="NameControl.touched && NameControl.errors?.['maxlength']">There can be a maximum of five hundred letters*</p>
+            </ng-container>
+     
+            <input formControlName="email" required type="email" name="email" placeholder="Enter your Email address">
+            <ng-container *ngIf="form.controls['email'] as EmailControl">
+                <p *ngIf="EmailControl.touched && EmailControl.errors?.['required']">Email is required*</p>
+                <p *ngIf="EmailControl.touched && EmailControl.errors?.['pattern']">Please give a valid email address*</p>
+            </ng-container>
+    
+            <textarea formControlName="message" required placeholder="Enter your Message" type="text" name="message" cols="30" rows="10"></textarea>
+            <ng-container *ngIf="form.controls['message'] as MessageControl">
+                <p *ngIf="MessageControl.touched && MessageControl.errors?.['required']">Message is required*</p>
+                <p *ngIf="MessageControl.touched && MessageControl.errors?.['minlength']">Please enter at least five letters*</p>
+                <p *ngIf="MessageControl.touched && MessageControl.errors?.['maxlength']">There can be a maximum of five hundred letters*</p>
+            </ng-container>    
+                
+            <button class="button-valid">Send message</button> 
+        </form>
+    </div>
+
+
+
+
+
+    <!--<div class="form-div">
+        <form [formGroup]="form" action="https://alextodor.de/alextodor/send_mail.php" method="POST">
+            <label for="">Name*</label>
+            <input formControlName="name" required type="text" name="name" placeholder="Enter your Name">
+            <ng-container *ngIf="form.controls['name'] as NameControl">
+                <p *ngIf="NameControl.touched && NameControl.errors?.['required']">Name is required*</p>
+                <p *ngIf="NameControl.touched && NameControl.errors?.['maxlength']">There can be a maximum of five hundred letters*</p>
+            </ng-container>
+
+            <label for="">Email*</label>
+            <input formControlName="email" required type="email" name="email" placeholder="Enter your Email address">
+            <ng-container *ngIf="form.controls['email'] as EmailControl">
+                <p *ngIf="EmailControl.touched && EmailControl.errors?.['required']">Email is required*</p>
+                <p *ngIf="EmailControl.touched && EmailControl.errors?.['pattern']">Please give a valid email address*</p>
+            </ng-container>
+
+            <label for="">Message*</label>
+            <textarea formControlName="message" required placeholder="Enter your Message" type="text" name="message" cols="30" rows="10"></textarea>
+            <ng-container *ngIf="form.controls['message'] as MessageControl">
+                <p *ngIf="MessageControl.touched && MessageControl.errors?.['required']">Message is required*</p>
+                <p *ngIf="MessageControl.touched && MessageControl.errors?.['minlength']">Please enter at least five letters*</p>
+                <p *ngIf="MessageControl.touched && MessageControl.errors?.['maxlength']">There can be a maximum of five hundred letters*</p>
+            </ng-container>    
+
+            <button type="submit" href="">Send</button>          
+        </form>
+    </div>-->
+</main>
+

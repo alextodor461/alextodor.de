@@ -1,43 +1,40 @@
 
 header{
-    background-color: black;
-    height: 9.75vh;
+    background-color: #141D2F;
+    height: 8vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     scroll-behavior: smooth;
-    padding: 0px 150px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1;
-    font-family: 'Raleway', sans-serif;
-    border-bottom: 0.25vh solid #2DFCD8;
+    padding: 0px 100px;
+    top: 20px;
+    z-index: 100;
+    font-family: 'Poppins', sans-serif;
 
-    .logo{
-        width: 50px;
-        cursor: pointer;
+    .name{
+        font-size: 28px;
+        font-weight: 700;
+        color: white;
     }
   
     .a-links{
 
         a{
-            margin: 0px 20px;
+            margin-left: 20px;
             text-decoration: none;
             color: white;
-            font-size: 1.5em;
-            font-weight: 100;
+            font-size: 20px;
+            font-weight: 300;
 
             &:hover{
-                color: #2DFCD8;
+                color: #9747FF;
             }
         }
     }
 }
 
 .scrolled{
-    border-bottom: 0.25vh solid #2DFCD8;
+    border-bottom: 0.25vh solid #66FCF1;
 }
 
 .menu-links{
@@ -46,7 +43,7 @@ header{
   right: 0;
   height: 100vh;
   width: 80%;
-  background-color: #1a1a1a;
+  background-color: #141d2f;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,7 +79,7 @@ header{
     img{
         margin: 0 !important;
         z-index: 1;
-        width: 40px !important;
+        width: 30px !important;
     }
 
     .a-links{

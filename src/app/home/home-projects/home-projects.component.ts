@@ -39,14 +39,6 @@ export class HomeProjectsComponent implements OnInit {
       category: "angular"
     },
 
-    /*{
-      name: "- Slack -",
-      url: "https://mygame.com",
-      text: "Slack",
-      img: "assets/img/chat-img.jpg",
-      category: "angular"
-    },*/
-
     {
       name: "- Kochwelt -",
       url: "https://alextodor.de/Kochwelt",
